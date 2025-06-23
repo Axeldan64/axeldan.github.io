@@ -74,20 +74,52 @@
       width: 100%;
       max-width: 400px;
     }
-    .socials {
+    .spotify-button {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .spotify-button a {
+      display: inline-block;
+      background-color: #1DB954;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    .spotify-button a:hover {
+      background-color: #17a144;
+    }
+    .socials, .instagram {
       text-align: center;
       margin-top: 40px;
     }
-    .socials a {
+    .socials a, .instagram a {
       display: inline-block;
       margin: 10px;
       color: #ffccff;
       font-size: 1.2em;
       text-decoration: none;
     }
-    .socials a:hover {
+    .socials a:hover, .instagram a:hover {
       color: #ffffff;
       text-shadow: 0 0 10px #ff33cc;
+    }
+    .insta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .insta-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .insta-grid img:hover {
+      transform: scale(1.05);
     }
     footer {
       text-align: center;
@@ -115,6 +147,7 @@
 
 <nav>
   <a href="#musica">Música</a>
+  <a href="#galeria">Instagram</a>
   <a href="#redes">Redes</a>
 </nav>
 
@@ -127,12 +160,24 @@
       Tu navegador no soporta audio.
     </audio>
   </div>
+  <div class="spotify-button">
+    <a href="https://open.spotify.com/intl-es/artist/1U7NnvrqYuYXPtOiOOhb6V" target="_blank">Escuchar en Spotify</a>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Instagram</h2>
+  <div class="insta-grid">
+    <a href="https://www.instagram.com/axeldan_men/" target="_blank"><img src="https://i.imgur.com/B8jQzhv.jpg" alt="IG1"></a>
+    <a href="https://www.instagram.com/axeldan_men/" target="_blank"><img src="https://i.imgur.com/B9GK4qc.jpg" alt="IG2"></a>
+    <a href="https://www.instagram.com/axeldan_men/" target="_blank"><img src="https://i.imgur.com/h9ebhNR.jpg" alt="IG3"></a>
+  </div>
 </section>
 
 <section id="redes">
   <h2>Conecta conmigo</h2>
   <div class="socials">
-    <a href="https://open.spotify.com/intl-es/artist/1U7NnvrqYuYXPtOiOOhb6V?si=AF6QXJ9_T6aUBNdiV1uXaA" target="_blank">Spotify</a>
+    <a href="https://open.spotify.com/intl-es/artist/1U7NnvrqYuYXPtOiOOhb6V" target="_blank">Spotify</a>
     <a href="https://www.youtube.com/@AxeldanMusic" target="_blank">YouTube</a>
     <a href="https://www.instagram.com/axeldan_men/" target="_blank">Instagram</a>
     <a href="https://www.facebook.com/axeldanmusic?locale=es_ES" target="_blank">Facebook</a>
