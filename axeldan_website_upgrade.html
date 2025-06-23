@@ -1,135 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Axeldan - Sitio Oficial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      background: linear-gradient(to bottom, #3c005a, #1a001f);
-      font-family: Arial, sans-serif;
-      color: white;
+      font-family: 'Rubik', sans-serif;
+      background-color: #1e002e;
+      color: #fff;
     }
+
     header {
-      background: #8d00c9;
-      padding: 20px;
+      background-color: #8e24aa;
       text-align: center;
+      padding: 2rem;
     }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+
     nav {
       display: flex;
       justify-content: center;
-      background: #26002b;
-      padding: 10px 0;
+      background-color: #4a0072;
+      padding: 1rem;
     }
+
     nav a {
-      margin: 0 20px;
+      margin: 0 1rem;
       text-decoration: none;
-      color: white;
+      color: #fff;
       font-weight: bold;
     }
-    .intro, .music, .gallery, .launches {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .intro p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    .launches {
-      border: 2px dashed #ff00cc;
+
+    .section {
+      padding: 2rem;
       text-align: center;
-      margin-bottom: 40px;
     }
-    .music-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+
+    .section h2 {
+      color: #f06292;
+      margin-bottom: 1rem;
     }
-    .music-item {
-      background: #330033;
-      padding: 20px;
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
-      text-align: center;
-      transition: transform 0.3s ease;
+
+    .highlight {
+      background-color: #2a003f;
+      border-radius: 10px;
+      margin: 2rem;
+      padding: 2rem;
     }
-    .music-item:hover {
-      transform: scale(1.05);
+
+    .songs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
     }
-    .music-item img {
-      width: 100%;
+
+    .song {
+      background-color: #3a003f;
       border-radius: 12px;
-      margin-bottom: 10px;
+      padding: 1rem;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
-    .music-item a {
-      color: #ff77ff;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    .gallery img {
+
+    .song img {
       width: 100%;
       border-radius: 10px;
-      margin: 10px 0;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .song a {
+      display: block;
+      margin-top: 0.5rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .biografia {
+      background-color: #2a003f;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 10px;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Axeldan</h1>
-    <p>Carlos Daniel Tutillo - Artista de Quito, Ecuador</p>
+    <p>Artista de Quito, Ecuador</p>
   </header>
 
   <nav>
-    <a href="#musica">Música</a>
-    <a href="#galeria">Fotos</a>
-    <a href="#presentaciones">Presentaciones</a>
     <a href="#lanzamientos">Lanzamientos</a>
+    <a href="#musica">Música</a>
+    <a href="#biografia">Biografía</a>
   </nav>
 
-  <section class="launches" id="lanzamientos">
-    <h2>🎧 Próximos lanzamientos</h2>
-    <p>¡Mantente atento! Nuevos temas con artistas ecuatorianos llegarán muy pronto.</p>
+  <section class="section highlight" id="lanzamientos">
+    <h2>🔥 Próximos Lanzamientos 🔥</h2>
+    <p>¡Este 2025 estará lleno de música nueva! Espéralo.</p>
   </section>
 
-  <section class="intro">
-    <h2>Sobre el Artista</h2>
-    <p>
-      Carlos Daniel Tutillo, conocido por su nombre artístico como Axeldan. Músico, compositor y cantante.
-      Nació el 22 de marzo en Santo Domingo, Ecuador, sin embargo a temprana edad se mudó a Quito, Ecuador.
-      Desde ese entonces mostró interés en el arte de la música tocando con diferentes grupos de música popular,
-      al mismo tiempo comienza su desarrollo como productor. Su talento para escribir y sus melodías pegajosas le
-      permitieron destacarse en el reguetón, hip hop, rap y trap ecuatoriano. Este año el artista se encuentra trabajado
-      en varios sencillos en colaboración con varios artistas ecuatorianos, sin duda este 2025 estará lleno de música.
-    </p>
-  </section>
-
-  <section class="music" id="musica">
+  <section class="section" id="musica">
     <h2>Música</h2>
-    <div class="music-grid">
-      <div class="music-item">
-        <img src="despelote-cover.jpg" alt="Despelote">
-        <p><strong>Despelote</strong></p>
-        <a href="https://youtube.com" target="_blank">Escuchar en YouTube</a>
+    <div class="songs">
+      <div class="song">
+        <img src="https://i.scdn.co/image/ab67616d0000b273c340db4a3d76ef7b04a0b1c8" alt="Unanaki" />
+        <a href="https://open.spotify.com/track/0XXYZZUnanaki" target="_blank">Unanaki</a>
       </div>
-      <!-- Agrega más items musicales aquí si deseas -->
+      <div class="song">
+        <img src="https://i.scdn.co/image/ab67616d0000b273f374df0a9833fbc58fa6f9e4" alt="Fue mi culpa" />
+        <a href="https://open.spotify.com/track/0XXYZZFueMiCulpa" target="_blank">Fue mi culpa</a>
+      </div>
+      <div class="song">
+        <img src="https://i.scdn.co/image/ab67616d0000b273fab531aa063b93835beef173" alt="Extrañándote" />
+        <a href="https://open.spotify.com/track/0XXYZZExtranandote" target="_blank">Extrañándote</a>
+      </div>
+      <div class="song">
+        <img src="https://i.scdn.co/image/ab67616d0000b273aa1434fc222b5e7bff7d64ff" alt="Adicto" />
+        <a href="https://open.spotify.com/track/0XXYZZAdicto" target="_blank">Adicto</a>
+      </div>
+      <div class="song">
+        <img src="https://i.scdn.co/image/ab67616d0000b273e8a3d55c39dc1dd14bfbaf80" alt="Chillo City" />
+        <a href="https://open.spotify.com/track/0XXYZZChilloCity" target="_blank">Chillo City</a>
+      </div>
+      <div class="song">
+        <img src="https://i.scdn.co/image/ab67616d0000b273c95123b1e89b0c36e1d93cf9" alt="El no en sí" />
+        <a href="https://open.spotify.com/track/0XXYZZElNoEnSi" target="_blank">El no en sí</a>
+      </div>
     </div>
   </section>
 
-  <section class="gallery" id="galeria">
-    <h2>Fotos</h2>
-    <img src="120339671_1182920435415445_4465469105886625536_n.jpg" alt="Axeldan 1">
-    <img src="90379044_1042252712815552_4374272329522348032_n.jpg" alt="Axeldan 2">
-    <img src="IMG_3210.JPEG" alt="Axeldan 3">
-    <img src="89782260_1032412167132940_3406550600698036224_n.png" alt="Axeldan 4">
-    <img src="356373034_1868400773534071_665720694150030820_n.jpg" alt="Axeldan 5">
-    <img src="182737505_1336176106756543_5430467492723861132_n.jpg" alt="Axeldan 6">
+  <section class="section biografia" id="biografia">
+    <h2>Biografía</h2>
+    <p>Carlos Daniel Tutillo, conocido por su nombre artístico como Axeldan. Músico, compositor y cantante. Nació el 22 de marzo en Santo Domingo, Ecuador, sin embargo a temprana edad se mudó a Quito, Ecuador. Desde ese entonces mostró interés en el arte de la música tocando con diferentes grupos de música popular, al mismo tiempo comienza su desarrollo como productor. Su talento para escribir y sus melodías pegajosas le permitieron destacarse en el reguetón, hip hop, rap y trap ecuatoriano. Este año el artista se encuentra trabajando en varios sencillos en colaboración con varios artistas ecuatorianos, sin duda este 2025 estará lleno de música.</p>
   </section>
-
 </body>
+
 </html>
