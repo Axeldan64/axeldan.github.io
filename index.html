@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Axeldan - Sitio Oficial</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #2b003b, #4b004f);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: #6a0dad;
+      box-shadow: 0 0 30px #ff00cc;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #fff;
+      text-shadow: 0 0 10px #ff00cc;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ffeaff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #3a0048;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff33cc;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ff33cc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px #ff00cc;
+    }
+    .music, .photos, .shows, .merch {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff00cc33;
+      text-align: center;
+    }
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2a002e;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Axeldan</h1>
+    <p>Carlos Daniel Tutillo - Artista de Quito, Ecuador</p>
+  </header>
+
+  <nav>
+    <a href="#musica">Música</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#presentaciones">Presentaciones</a>
+    <a href="#merch">Merch</a>
+  </nav>
+
+  <section id="musica">
+    <h2>Música</h2>
+    <div class="music">
+      <div class="item">
+        <p><strong>Nombre del Álbum</strong></p>
+        <audio controls>
+          <source src="ruta-a-tu-cancion.mp3" type="audio/mpeg">
+          Tu navegador no soporta el audio.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <section id="fotos">
+    <h2>Fotos</h2>
+    <div class="photos">
+      <div class="item">
+        <img src="ruta-a-tu-foto.jpg" alt="Axeldan en concierto">
+      </div>
+    </div>
+  </section>
+
+  <section id="presentaciones">
+    <h2>Presentaciones</h2>
+    <div class="shows">
+      <div class="item">
+        <p><strong>Nombre del evento</strong></p>
+        <p>Ciudad, Fecha</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="merch">
+    <h2>Merch</h2>
+    <div class="merch">
+      <div class="item">
+        <img src="ruta-producto.jpg" alt="Producto">
+        <p><strong>Nombre del producto</strong></p>
+        <p>$Precio</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Axeldan. Todos los derechos reservados. Quito, Ecuador.
+  </footer>
+
+</body>
+</html>
