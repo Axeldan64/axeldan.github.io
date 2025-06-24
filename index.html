@@ -1,25 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Axeldan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axeldan - Sitio Oficial</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Próximos Lanzamientos</h1>
-  <div>
-    <img src="despelote-cover.jpg" alt="Despelote" width="200"><br>
-    <p>"Despelote" - Axeldan ft Sonrisas & Temo</p>
-    <audio controls>
-      <source src="despelote-preview.mp3" type="audio/mpeg">
-    </audio>
-  </div>
-  <div>
-    <img src="Gemidos_Spotify_Cover.png" alt="Gemidos" width="200"><br>
-    <p>"Gemidos" - Axeldan x Sonrisas</p>
-    <audio controls>
-      <source src="gemidos-preview.mp3" type="audio/mpeg">
-    </audio>
-  </div>
+  <header>
+    <h1>Axeldan</h1>
+    <p>Artista de Quito, Ecuador</p>
+  </header>
+
+  <section class="highlight">
+    <h2>🔥 Próximos Lanzamientos 🔥</h2>
+    <p>¡Este 2025 estará lleno de música nueva! Espéralo.</p>
+    <div class="preview">
+      <img src="images/despelote-cover.jpg" alt="Despelote" />
+      <p>"Despelote" - Axeldan x Sonrisas x Temo<br><small>Prod. Clarity Sound’s</small></p>
+      <audio controls>
+        <source src="audios/despelote-preview.mp3" type="audio/mp3" />
+        Tu navegador no soporta audio HTML5.
+      </audio>
+    </div>
+    <div class="preview">
+      <img src="images/Gemidos_Spotify_Cover.png" alt="Gemidos" />
+      <p>"Gemidos" - Axeldan x Sonrisas<br><small>Prod. Clarity Sound’s</small></p>
+      <audio controls>
+        <source src="audios/gemidos-preview.mp3" type="audio/mp3" />
+        Tu navegador no soporta audio HTML5.
+      </audio>
+    </div>
+  </section>
 </body>
 </html>

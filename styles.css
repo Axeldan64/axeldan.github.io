@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #18001f, #2e0d3b);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.highlight {
+  background: #380048;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 20px;
+}
+
+.preview {
+  margin-top: 20px;
+}
+
+.preview img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.preview audio {
+  margin-top: 10px;
+}
