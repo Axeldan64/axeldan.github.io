@@ -1,0 +1,30 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #1a001f;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+header, section {
+  padding: 20px;
+}
+h2 {
+  font-size: 24px;
+}
+.preview, .track {
+  margin-bottom: 20px;
+}
+img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+audio {
+  width: 200px;
+}
+.gallery img {
+  width: 100px;
+  margin: 5px;
+}
