@@ -11,121 +11,52 @@
       font-family: 'Arial', sans-serif;
       background: linear-gradient(to bottom right, #18001f, #2e0d3b);
       color: #fff;
-      overflow-x: hidden;
     }
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      animation: fadeIn 1s ease-out;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #ccc;
-      margin-top: 10px;
-      animation: fadeIn 1.5s ease-out;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    .highlight {
-      background: #380048;
-      border-radius: 10px;
-      text-align: center;
-      padding: 30px 20px;
-      margin-bottom: 40px;
-      animation: zoomIn 1s ease-out;
-    }
-    .highlight h2 {
-      color: #ff4fe8;
-    }
-    .songs {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      animation: fadeIn 1.5s ease-out;
-    }
-    .song-card {
-      background: #4e1b64;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-    .song-card:hover {
-      transform: scale(1.05);
-    }
-    .song-card img {
-      width: 100%;
-      display: block;
-    }
-    .song-card a {
-      display: block;
-      padding: 10px;
-      color: #fff;
-      text-align: center;
-      text-decoration: none;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      animation: fadeIn 2s ease-out;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #200027;
-    }
-    .social-icons a {
-      color: #fff;
-      margin: 0 10px;
-      font-size: 1.5em;
-      transition: color 0.3s;
-    }
-    .social-icons a:hover {
-      color: #ff4fe8;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
+    header { text-align: center; padding: 60px 20px 30px; }
+    header h1 { font-size: 3em; margin: 0; animation: fadeIn 1s ease-out; }
+    header p { font-size: 1.2em; color: #ccc; margin-top: 10px; animation: fadeIn 1.5s ease-out; }
+    section { padding: 40px 20px; }
+    .highlight { background: #380048; border-radius: 10px; text-align: center; padding: 30px 20px; margin-bottom: 40px; animation: zoomIn 1s ease-out; }
+    .highlight h2 { color: #ff4fe8; }
+    .songs, .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .song-card, .gallery img { border-radius: 10px; transition: transform 0.3s ease; }
+    .song-card:hover { transform: scale(1.05); }
+    .song-card img { width: 100%; display: block; }
+    .song-card a { display: block; padding: 10px; color: #fff; text-align: center; text-decoration: none; }
+    footer { text-align: center; padding: 30px; background: #200027; }
+    .social-icons a { color: #fff; margin: 0 10px; font-size: 1.5em; }
+    .social-icons a:hover { color: #ff4fe8; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes zoomIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
   </style>
 </head>
 <body>
   <header>
-    <h1>Axeldan</h1>
     <p>Artista de Quito, Ecuador</p>
   </header>
+
   <section class="highlight">
     <h2>🔥 Próximos Lanzamientos 🔥</h2>
-    <p>¡Este 2025 estará lleno de música nueva! Espéralo.</p>
     <div style="margin-top: 20px;">
-      <img src="gemidos-portada.jpg" alt="Gemidos - Axeldan x Sonrisas" style="width:200px; border-radius:10px;">
+      <img src="despelote-cover.jpg" alt="Despelote - Axeldan" style="width:200px;"><br>
+      <p>"Despelote" - Axeldan ft. Sonrisas & Temo<br><small>Prod. Clarity Sound’s</small></p>
+      <img src="Gemidos_Spotify_Cover.png" alt="Gemidos - Axeldan x Sonrisas" style="width:200px;"><br>
       <p>"Gemidos" - Axeldan x Sonrisas<br><small>Prod. Clarity Sound’s</small></p>
     </div>
   </section>
+
   <section>
     <h2>Música</h2>
     <div class="songs">
-      <div class="song-card"><a href="https://open.spotify.com/intl-es/track/6gxzaikodvczU6N1cihqWQ" target="_blank"><img src="una-naki-cover.jpg" alt="Una Naki">Una Naki</a></div>
-      <div class="song-card"><a href="https://open.spotify.com/intl-es/track/6A3ygOTxok639uwuZrHINq" target="_blank"><img src="chillocity-cover.jpg" alt="Chillo City">Chillo City</a></div>
-      <div class="song-card"><a href="https://open.spotify.com/intl-es/album/4CR88wXcbUGLjdWUxfZsVp" target="_blank"><img src="extranandote-cover.jpg" alt="Extrañándote">Extrañándote</a></div>
-      <div class="song-card"><a href="https://open.spotify.com/intl-es/album/3G0IMM7085NRp2Qug60VTJ" target="_blank"><img src="adicto-cover.jpg" alt="Adicto">Adicto</a></div>
-      <div class="song-card"><a href="https://open.spotify.com/intl-es/track/1vgPfRZJyJr0anRjsNnALz" target="_blank"><img src="fue-mi-culpa-cover.jpg" alt="Fue mi culpa">Fue mi culpa</a></div>
-      <div class="song-card"><a href="https://open.spotify.com/album/47NXfE8RP2g9Cc4Afy3IC8" target="_blank"><img src="el-no-en-si-cover.jpg" alt="El No En Sí">El No En Sí</a></div>
+      <div class="song-card"><a href="https://open.spotify.com/intl-es/track/6gxzaikodvczU6N1cihqWQ" target="_blank"><img src="una-naki-cover.jpg" alt="Una Naki"><br>Axeldan - Una Naki</a></div>
+      <div class="song-card"><a href="https://open.spotify.com/intl-es/track/6A3ygOTxok639uwuZrHINq" target="_blank"><img src="chillocity-cover.jpg" alt="Chillo City"><br>Axeldan - Chillo City</a></div>
+      <div class="song-card"><a href="https://open.spotify.com/intl-es/album/4CR88wXcbUGLjdWUxfZsVp" target="_blank"><img src="extranandote-cover.jpg" alt="Extrañándote"><br>Axeldan - Extrañándote</a></div>
+      <div class="song-card"><a href="https://open.spotify.com/intl-es/album/3G0IMM7085NRp2Qug60VTJ" target="_blank"><img src="adicto-cover.jpg" alt="Adicto"><br>Axeldan - Adicto</a></div>
+      <div class="song-card"><a href="https://open.spotify.com/intl-es/track/1vgPfRZJyJr0anRjsNnALz" target="_blank"><img src="fue-mi-culpa-cover.jpg" alt="Fue mi culpa"><br>Axeldan - Fue mi culpa</a></div>
+      <div class="song-card"><a href="https://open.spotify.com/album/47NXfE8RP2g9Cc4Afy3IC8" target="_blank"><img src="el-no-en-si-cover.jpg" alt="El No En Sí"><br>Axeldan - El No En Sí</a></div>
     </div>
   </section>
+
   <section>
     <h2>Galería</h2>
     <div class="gallery">
@@ -136,18 +67,17 @@
       <img src="foto5.jpg" alt="Axeldan vivo 5">
     </div>
   </section>
+
   <section>
     <h2>Biografía</h2>
     <p>
       Carlos Daniel Tutillo, conocido por su nombre artístico como Axeldan. Músico, compositor y cantante.
-      Nació el 22 de marzo en Santo Domingo, Ecuador, sin embargo a temprana edad se mudó a Quito,
-      Ecuador. Desde ese entonces mostró interés en el arte de la música tocando con diferentes grupos de
-      música popular, al mismo tiempo comienza su desarrollo como productor. Su talento para escribir y
-      sus melodías pegajosas le permitieron destacarse en el reguetón, hip hop, rap y trap ecuatoriano.
-      Este año el artista se encuentra trabajando en varios sencillos en colaboración con varios artistas
-      ecuatorianos, sin duda este 2025 estará lleno de música.
+      Nació el 22 de marzo en Santo Domingo, Ecuador, sin embargo a temprana edad se mudó a Quito.
+      Desde ese entonces mostró interés en la música tocando con grupos populares. Su talento para escribir
+      y crear melodías pegajosas le permitió destacar en el reguetón, hip hop, rap y trap ecuatoriano.
     </p>
   </section>
+
   <footer>
     <div class="social-icons">
       <a href="https://www.instagram.com/axeldan" target="_blank"><i class="fab fa-instagram"></i></a>
